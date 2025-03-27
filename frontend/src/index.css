@@ -1,0 +1,207 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  background: white;
+  border: none;
+  color: black;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background: #ddd;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  background: white;
+  color: black;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dark-mode-toggle:hover {
+  background: #ddd;
+}
+
+/* Dark Mode Header */
+html.dark-mode .header {
+  background: #222;
+}
+
+html.dark-mode .nav-btn {
+  background: #333;
+  color: white;
+}
+
+html.dark-mode .nav-btn:hover {
+  background: #444;
+}
+
+html.dark-mode .dark-mode-toggle {
+  background: #444;
+  color: white;
+}
+
+html.dark-mode .dark-mode-toggle:hover {
+  background: #555;
+}
+/* Default Light Mode */
+body {
+  background-color: #ffffff;
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Apply dark mode to whole document */
+html.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #282c34;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.user-dropdown {
+  position: relative;
+}
+
+.user-btn {
+  background: none;
+  border: none;
+  color: rgb(192, 188, 188);
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background: rgb(218, 38, 38);
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 120px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu button {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.dropdown-menu button:hover {
+  background: #e23636;
+}
+/* Default Light Mode */
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Apply Dark Mode Styles to the Entire Page */
+.dark-mode body,
+.dark-mode header,
+.dark-mode .search-bar,
+.dark-mode .nav-links {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode input {
+  background-color: #222;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode .dropdown-menu {
+  background-color: #222;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode .nav-btn,
+.dark-mode .user-btn {
+  color: white;
+}
+
+.dark-mode .search-bar input {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode .search-bar button {
+  background-color: #4fa3d1;
+  color: white;
+}
+
+.dark-mode .dropdown-menu button:hover {
+  background-color: #333;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 5px;
+  color: black;
+}
+
+.dark-mode .dark-mode-toggle {
+  color: white;
+}
+
+html.light-mode .header {
+  background: #f6f4f4;
+}
